@@ -34,7 +34,6 @@ class FlightManager {
             item.flightId == flight.flightId,
         )
       ) {
-        continue;
       }
 
       const newRoute = currentRoute.concat(flight);
