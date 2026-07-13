@@ -10,7 +10,7 @@ class check {
       throw new Error("Invalid destination");
     }
 
-    if (maxStops < 0 || maxStops > 5) {
+    if (maxStops < 0) {
       throw new Error("Invalid stops");
     }
   }
