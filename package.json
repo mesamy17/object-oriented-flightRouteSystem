@@ -1,0 +1,20 @@
+{
+  "name": "objectoriented-flightroutediscovery",
+  "version": "1.0.0",
+  "description": "Flight Route Discovery using objects and classes",
+  "homepage": "https://github.com/mesamy17/object-oriented-flightRouteSystem#readme",
+  "bugs": {
+    "url": "https://github.com/mesamy17/object-oriented-flightRouteSystem/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mesamy17/object-oriented-flightRouteSystem.git"
+  },
+  "license": "ISC",
+  "author": "Samarth Sawant",
+  "type": "commonjs",
+  "main": "findRoutes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
