@@ -371,8 +371,26 @@ describe("Flight Manager", function () {
     assert.deepStrictEqual(routes, []);
   });
 
+  test("should return empty array if invalid source city", () => {
+    const routes = manager.getRoutes("London", "Mumbei", 4);
+
+    assert.deepStrictEqual(routes, []);
+  });
+
+  test("should return empty array if both cities are invalid", () => {
+    const routes = manager.getRoutes("London", "New York", 0);
+
+    assert.deepStrictEqual(routes, []);
+  });
+
   test("should return empty array when max stops are not enough", () => {
     const routes = manager.getRoutes("Mumbai", "Kolkata", 0);
+
+    assert.deepStrictEqual(routes, []);
+  });
+
+  test("should return empty array when source and destination cities are same", () => {
+    const routes = manager.getRoutes("Mumbai", "Mumbai", 2);
 
     assert.deepStrictEqual(routes, []);
   });
