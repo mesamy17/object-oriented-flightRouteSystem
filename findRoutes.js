@@ -20,4 +20,4 @@ function findRoutes(source, destination, maxStops) {
   }
 }
 
-console.log(findRoutes("Mumbai", "Kolkata", 2));
+module.exports = { findRoutes };
